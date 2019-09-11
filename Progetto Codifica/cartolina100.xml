@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "allDTD.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<teiCorpus xml:id="cart100" xmlns="http://www.tei-c.org/ns/1.0"> 
+   <!-- HEADER DEL CORPUS -->
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title> L'Angelus - Edizione digitale diplomatico-interpretativa </title>
+            </titleStmt>
+          
+            <publicationStmt>
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability status="restricted">
+                    <p>Available under licence only</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+         
+
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <notesStmt>
+                <note n="1"> Nella cartolina non è presente né l'indirizzo del destinatario, né il francobollo. Supponiamo che la cartolina non fosse mai stata spedita, o che fosse contenuta in una busta da lettere non pervenutaci, o che fosse stata recapitata a mano. 
+                </note>
+                <note n="2"> Sul retro troviamo la stampa "Proprietà artistica riservata - N 1005", e il titolo dell'opera. Da notare che il cognome riportato è "Milet" , mentre il  vero cognome del pittore francese è "Millet".
+                    Inoltre, sempre sul retro, sul fondo della cartolina, è presente la scritta " <unclear reason="faded"> Stampata <supplied> in </supplied> Italia </unclear> " che si legge con qualche difficoltà.
+                </note>
+            </notesStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title type="custom" resp="#ES" xml:id="titolo100"> Dolci ricordi </title>
+                    <author ref="#GC"> Giovanni </author>
+                    <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                    <date when="1917"> 1917 </date>
+                </bibl>
+
+                <msDesc>
+                    <msIdentifier>
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno>7694_100_001/002</idno>
+                    </msIdentifier>
+
+                        <!-- Informazioni sul contenuto della cartolina -->
+                        <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                    <stamp></stamp>
+                                </support>
+                                <!-- CONSERVAZIONE 
+                                buono = non occorrono interventi di restauro;
+                                discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+                                mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+                                cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di 
+                                parti rilevanti, necessita di restauro-->
+                                <condition>Buona, non occorrono interventi di restauro</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    
+                </msDesc>
+
+                <!-- NOMI -->
+                
+                <listPerson>
+                    
+                    
+                    <person>
+                        <persName ref="#GC">
+                            <forename>Giovanni</forename>
+                            <surname>Coliola </surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation n="1">[maggiore]</occupation>
+                        <note></note>
+                    </person>
+                    <person>
+                        <persName ref="#OT">
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                        <note></note>
+                    </person>
+                </listPerson>
+
+                <listPlace>
+                    <place>
+                        <placeName ref="#MO">Modena</placeName>
+                        <settlement type="località">Città</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <country key="N">IT</country>
+                        <note></note>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+
+        <profileDesc>
+            
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#GC"> Giovanni Coliola </persName>
+                    <placeName ref="#MO"> Modena </placeName>
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="writing" when="19170926"> 26/09/1917 </date>
+                </correspAction>
+                
+                <correspAction type="received">
+                    <persName ref="#OT"> Oliva Turtura </persName>
+                </correspAction>
+            </correspDesc>
+
+            <textClass>
+                <keywords>
+                    <!-- soggettario -->
+                    <!-- tipologia -->
+                    <!-- descrizione -->
+                    <term>Cartolina </term>
+                    <term type="descr1">Cartolina Artistica </term>
+                    <term type="descr2">Coppia di innamorati </term>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="it-IT">Italiano</language>
+            </langUsage>
+        </profileDesc>
+
+    </teiHeader>
+
+
+    <text type="cartolina" xml:lang="it">
+        <!-- TRASCRIZIONE -->
+        <body>
+            <div type="fronte">
+                <figure  xml:id="testo100">
+                    <pb facs="#fronte100" />
+                    <figDesc> L' immagine è un omaggio al quadro "L'Angelus" di Jean Francois Millet , dove i protagonisti sono qui due bambini. Entrambi i personaggi sono intenti a pregare: il bambino tiene il cappello tra le mani, capo rivolto verso il basso e occhi chiusi; la bambina tiene le mani intrecciate al petto, capo rivolto verso il basso e occhi chiusi. Lo sfondo dell' immagine è un campo agricolo, dove i due protagonisti contadini erano intenti a lavorare prima del momento della preghiera.
+                    </figDesc>
+                    <head> L'Angelus </head>
+                     <note n="1" place="bottom"> Nella parte inferiore è
+                         presente la scritta <orgName>" A BERTIGLIA " </orgName>.</note>
+                </figure>
+            </div>
+
+            <div type="retro">
+                
+                <div type="codice"> 
+                    <p>
+                        <num type="cardinal">
+                            <idno> 100 </idno>
+                        </num>
+                    </p>
+                </div>
+                
+                <div type="message" xml:id="c100">
+                <!-- data e luogo  -->
+                    <opener facs="#luogo_data_100">
+                        <dateline> 
+                            <placeName> Modena </placeName> 
+                            <distinct type="forma_desueta"> li </distinct> 
+                            <date when="19171231"> 26/9-1917</date>. 
+                        </dateline>
+                        <salute>  <lb facs="#primariga_100"/> <persName> Oliva</persName>, </salute>
+                    </opener>
+                <!-- corpo della cartolina -->
+                    <p>
+                        
+                        <lb facs="#secondariga_100"/> Sono solo nella mia camera
+                        <lb facs="#terzariga_100"/> e rivado col pensiero alle belle serate
+                        <lb facs="#quartariga_100"/> trascorse in tua compagnia.
+                        <lb facs="#quintariga_100"/> Inerte e confuse mi giungono mille
+                        <lb facs="#sestariga_100"/> voci insieme, mille echi di anime
+                        <lb facs="#settimariga_100"/> illuse d'una vita allegra e <distinct> briosa </distinct>
+                        <lb facs="#ottavariga_100"/> povere d'amore e ricche di procaci 
+                        <lb facs="#nonariga_100"/> <unclear reason="illeggibile"> ambizioni</unclear>. Io le ho fuggite e 
+                        <lb facs="#decimariga_100"/> mi sono ricoverato presso la quiete
+                        <lb facs="#undicesimariga_100"/> dei miei pensieri che mi  danno la 
+                        <lb facs="#dodicesimariga_100"/> nostalgia <damage agent="mildew" degree="low"> profonda </damage> e il desiderio
+                        <lb facs="#tredicesimariga_100"/> irresistibile di te, di te e di nessun
+                        <lb facs="#quattordicesimariga_100"/> altro, ho dimenticato tutto, tutto e 
+                        <lb facs="#quindicesimariga_100"/> tu sei la regina che <distinct> impera </distinct> nel <w>
+                        <lb facs="#sedicesimariga_100" break="no"/> l </w> 'animo mio, - sempre - 
+                        <lb facs="#diciasettesimariga_100"/> Amami mia cara forte <damage agent="mildew" degree="low"> fo</damage>rte. 
+                    </p>
+                    
+                    <!-- saluto finale -->
+                    <closer > 
+
+                        <lb facs="#saluti_100"/> 
+                        <salute> Un 
+                            <distinct> soavissimo </distinct>
+                        </salute> del tuo <signed> <damage degree="high">Gio<supplied>[va]</supplied>nnino </damage> </signed>
+                    
+                    </closer>
+                </div>
+            </div>
+        </body>
+    </text>
+
+    <facsimile>
+        <!-- RETRO -->
+        <surface xml:id ="retro100">
+            <graphic url="cartoline/7694-100R.jpg" width='1060px' height='1619px'/>
+            <zone xml:id="luogo_data_100" ulx="21" uly="1390" lrx="879" lry="1422"/>
+            <zone xml:id="primariga_100" ulx="50" uly="1471" lrx="977" lry="1497" /> 
+            <zone xml:id="secondariga_100" ulx="43" uly="1535" lrx="1054" lry="1579"/> 
+            <zone xml:id="terzariga_100" ulx="29" uly="1303" lrx="974" lry="1343"/> 
+            <zone xml:id="quartariga_100" ulx="23" uly="1216" lrx="1028" lry="1270" /> 
+            <zone xml:id="quintariga_100" ulx="26" uly="1129" lrx="1043" lry="1172" /> 
+            <zone xml:id="sestariga_100" ulx="16" uly="1050" lrx="1015" lry="1087" /> 
+            <zone xml:id="settimariga_100" ulx="21" uly="972" lrx="1026" lry="1005" /> 
+            <zone xml:id="ottavariga_100" ulx="19" uly="905" lrx="1042" lry="915" /> 
+            <zone xml:id="nonariga_100" ulx="32" uly="818" lrx="1030" lry="843"/> 
+            <zone xml:id="decimariga_100" ulx="25" uly="714" lrx="1046" lry="756"/> 
+            <zone xml:id="undicesimariga_100" ulx="26" uly="628" lrx="1025" lry="676"/> 
+            <zone xml:id="dodicesimariga_100" ulx="20" uly="553" lrx="1041" lry="593"/> 
+            <zone xml:id="tredicesimariga_100" ulx="26" uly="447" lrx="1052" lry="504"/> 
+            <zone xml:id="quattordicesimariga_100" ulx="35" uly="356" lrx="869" lry="409"/> 
+            <zone xml:id="quindicesimariga_100" ulx="26" uly="289" lrx="1030" lry="316"/> 
+            <zone xml:id="sedicesimariga_100" ulx="49" uly="160" lrx="1036" lry="225"/>
+            <zone xml:id="diciasettesimariga_100" ulx="34" uly="57" lrx="353" lry="132"/>
+            <zone xml:id="saluti_100" ulx="378" uly="12" lrx="989" lry="65"/> 
+            </surface>
+        <!-- FRONTE -->
+        <surface xml:id="fronte100">
+            <graphic url ="cartoline/7694-100F.jpg"/>
+        </surface>
+        
+    </facsimile>
+</teiCorpus>

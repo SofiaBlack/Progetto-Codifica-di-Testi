@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "allDTD.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<teiCorpus xml:id="cart13" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title>Fiori - Edizione digitale diplomatico-interpretativa</title>
+            </titleStmt>
+            <publicationStmt> <!-- elemento obbligaorio per fileDesc -->
+                <publisher>
+                    <orgName ref="#UNIPI"> Unipi </orgName> 
+                </publisher>  
+            </publicationStmt>
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <notesStmt>
+                <note>Nella cartolina non sono riportati né indirizzo di destinazione né francobolli. Supponiamo che la cartolina non fosse mai stata spedita, o che fosse contenuta all'interno di una busta da lettere non pervenutaci, o che fosse stata recapitata a mano.</note>
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    <title type="custom" resp="#ES" xml:id="titolo13">Amore e lontananza</title>
+                    <author ref="#OT">Oliva</author>
+                    <date when="1916">1916</date>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <!-- CODICE IDENTIFICATIVO -->
+                        <idno>7694_013_001/002</idno>
+                    </msIdentifier>
+                    <!-- Informazioni sul contenuto della cartolina -->
+                    <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+                                <!-- CONSERVAZIONE 
+                                buono = non occorrono interventi di restauro;
+discreto = perfettamente leggibile in tutte le componenti ma con rischi di deterioramento per usura;
+mediocre = perfettamente leggibile, ma mancano alcune sue parti;
+cattivo = intaccato da parassiti o deteriorato da cattivi interventi passati o mancanti di parti rilevanti, necessita di restauro-->
+                                <condition>Buona, non sono necessari interventi di restauro.</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                </msDesc>
+                <!-- NOMI -->
+                <listPerson>
+                    <person xml:id="GC">
+                        <persName>
+                            <forename>Giovanni</forename>
+                            <surname>Coliola </surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation>[maggiore]</occupation>
+                    </person>
+                    <person xml:id="OT">
+                        <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex>
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">Città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#OT">Oliva Turtura</persName>
+                    <placeName ref="#RV">Ravenna</placeName>
+                    <date type="writing" when="1916-12-19">1916/12/19</date>
+                </correspAction>
+                <correspAction type="received">
+                    <persName ref="#GC">Giovanni Coliola</persName>
+                </correspAction>
+            </correspDesc>
+            <textClass>
+                <keywords>
+                    <!-- soggettario -->
+                    <!-- tipologia -->
+                    <!-- descrizione -->
+                    <term>Cartolina </term>
+                    <term type="descr1">Cartolina Artistica </term>
+                    <term type="descr2">Coppia di innamorati</term>
+                </keywords>
+            </textClass>
+            <langUsage>
+                <language ident="it-IT">Italiano</language>
+            </langUsage>
+        </profileDesc>
+    </teiHeader>
+    
+    <!-- DEFINIZIONE -->
+    <text type="cartolina"  xml:lang="it">
+        <!-- TRASCRIZIONE -->
+        <body>
+            <div type="fronte">
+                <figure xml:id="testo013">
+                    <figDesc>L'immagine presenta una giovane donna sorridente che reca un bouquet di fiori di campo tra le mani. La vediamo portare un cappello a tesa larga, con un grande nastro che lo sicura alla testa e adornato con grandi fiori. Nell' illustrazione è presente la firma dell'autore, G. Campi.</figDesc>
+                    <head> Fiori </head>
+                    <note n="1"> Sotto l'immagine, attraverso la grafia della mittente, è intravisibile il titolo e l'autore dell'immagine: "Fiori (G. Campi)". </note>
+                    <note n="2"> Sul fronte è presente anche la chiusura della cartolina con il saluto e la firma della mittente.</note>
+                </figure>
+                
+                <div prev="#part1" xml:id="part2" >
+                <p>
+                    <lb facs="primariga_013F"/> Rivedrai con più ansia se mi penserai
+                </p>
+                <closer>
+                    <lb facs="secondariga_013F"/><persName ref="#GC"><forename>Giovannino</forename></persName> amami amami
+                    <lb facs="terzariga_013F"/>Scrivi 
+                 </closer>
+                 <signed>
+                     <lb facs="quartariga_013F"/><persName ref="#OT"><forename>Oliva</forename></persName>
+                 </signed>
+                   
+            </div>
+            </div>
+            
+            <div type="retro">
+                <div type="codice"> 
+                    <p>
+                        <num type="cardinal">
+                            <idno> 13 </idno>
+                        </num>
+                    </p>
+                </div>
+                <div type="message" xml:id="part1" next="#part2">
+                    <!-- data e luogo -->
+                    <opener facs="#luogo_data_013">
+                        <dateline>
+                            <placeName>Ravenna</placeName>
+                            <date when="19161009"> 9 Ottobre <choice><abbr>916</abbr><expan>1916</expan></choice></date>
+                        </dateline>
+                        
+                        <lb facs="#primariga_013"/><salute><persName ref="#GC"><forename>Giovannino</forename></persName> mio</salute>
+                    </opener>
+                    <!--corpo della cartolina-->
+                    <p>
+                        <lb facs="#secondariga_013"/> ti amo<pc>,</pc> ti amo pazzamente<pc>...</pc>
+                        <lb facs="#terzariga_013"/> <persName ref="#GC"><forename>Giovannino</forename></persName><pc>,</pc> <name type="person" ref="#GC">Giovannino</name>
+                        <lb facs="#quartariga_013"/> <persName ref="#GC"><forename>Giovannino</forename></persName> <pc>...</pc> lascia che 
+                        <lb facs="#quintariga_013"/> io ti chiami ardentemente così
+                        <lb facs="#sestariga_013"/> mille volte<pc>,</pc> lascia che io metta nel
+                        <lb facs="#settimariga_013"/> tuo nome tutto l<pc>'</pc> impeto di passione
+                        <lb facs="#ottavariga_013"/>che <distinct>erompe</distinct> dal cuor mio... ..
+                        <lb facs="#nonariga_013"/>non so dirti che così perché avrei <hi rend="underline">troppo</hi>
+                        <lb facs="#decimariga_013"/>da dirti <pc>..</pc>
+                        <lb facs="#undicesimariga_013"/>Perché non puoi più scrivermi a
+                        <lb facs="#dodicesimariga_013"/>lungo<pc>?</pc> Fallo sempre quando lo puoi<pc>,</pc>
+                        <lb facs="#tredicesimariga_013"/> <unclear reason="illeggible">che</unclear> non saprai mai quanto bene 
+                        <lb facs="#quattordicesimariga_013"/>possono farmi le tue dolci parole
+                        <lb facs="#quindicesimariga_013"/>Anch<pc>'</pc> io lo farò sempre <pc>(</pc>forse
+                        <lb facs="#sedicesimariga_013"/>stasera<pc>)</pc> Ho bisogno di sentirmi sicura
+                        <lb facs="#diciassettesimariga_013"/><del rend="overstrike">se</del> se m<pc>'</pc> ispirito<pc>,</pc> ho bisogno immenso
+                        <lb facs="#diciottesimariga_013"/><hi rend="underline">di te<pc>,</pc> del tuo aiuto </hi><pc>....</pc> <persName ref="#GC"><forename>Giovannino</forename></persName>
+                        <lb facs="#diciannovesimariga_013"/><name type="person" ref="#GC">Giovannino</name> mi vuoi
+                        <lb facs="#ventesimariga_013"/> bene davvero<pc>?</pc> Tu non puoi ancora
+                        <lb facs="#ventunesimariga_013"/>sapere quanto ti ami e ti desideri
+                        <lb facs="#ventiduesimariga_013"/>la tua <persName ref="#OT"><forename>Oliva</forename></persName> <pc>....</pc> Mi scriverai a lungo<pc>?</pc>
+                            <lb facs="#ventitreesimariga_013"/>Sì <persName ref="#GC"><forename>Giovannino</forename></persName> scrivimi parlami tanto
+                        <lb facs="#ventiquattresimariga_013"/>di te<pc>,</pc> accontentami<pc>.</pc> Aspetto ancora
+                        <lb facs="#venticinquesimariga_013"/>la famosa fotografia e puoi immaginare
+                        <lb facs="#ventiseiesimariga_013"/>con che ansia <pc>....</pc>
+                    </p>
+                </div>
+            </div>
+          
+        </body>
+    </text>
+    <facsimile>
+    <!--retro-->
+        <surface xml:id="retro013">
+            <graphic url='cartoline/7694-013R.jpg' width='1081px' height='1665px' />
+            <zone xml:id="luogo_data_013" ulx="580" uly="2" lrx="1079" lry="53" />
+            <zone xml:id="primariga_013" ulx="276" uly="51" lrx="886" lry="127" />
+            <zone xml:id="secondariga_013" ulx="56" uly="103" lrx="1071" lry="207" />
+            <zone xml:id="terzariga_013" ulx="75" uly="171" lrx="944" lry="254" />
+            <zone xml:id="quartariga_013" ulx="62" uly="257" lrx="1068" lry="335" />
+            <zone xml:id="quintariga_013" ulx="32" uly="328" lrx="976" lry="392" />
+            <zone xml:id="sestariga_013" ulx="65" uly="395" lrx="1069" lry="461" />
+            <zone xml:id="settimariga_013" ulx="31" uly="453" lrx="1076" lry="540" />
+            <zone xml:id="ottavariga_013" ulx="40" uly="519" lrx="1035" lry="576" />
+            <zone xml:id="nonariga_013" ulx="37" uly="572" lrx="1078" lry="695" />
+            <zone xml:id="decimariga_013" ulx="39" uly="641" lrx="754" lry="711" />
+            <zone xml:id="undicesimariga_013" ulx="49" uly="709" lrx="1029" lry="775" />
+            <zone xml:id="dodicesimariga_013" ulx="47" uly="777" lrx="1069" lry="858" />
+            <zone xml:id="tredicesimariga_013" ulx="39" uly="830" lrx="1056" lry="890" />
+            <zone xml:id="quattordicesimariga_013" ulx="37" uly="899" lrx="1068" lry="958" />
+            <zone xml:id="quindicesimariga_013" ulx="41" uly="965" lrx="1019" lry="1013" />
+            <zone xml:id="sedicesimariga_013" ulx="51" uly="1017" lrx="1058" lry="1062" />
+            <zone xml:id="diciasettesimariga_013" ulx="32" uly="1064" lrx="1075" lry="1162" />
+            <zone xml:id="diciottesimariga_013" ulx="40" uly="1128" lrx="1080" lry="1238" />
+            <zone xml:id="diciannovesimaariga_013" ulx="55" uly="1198" lrx="953" lry="1260" />
+            <zone xml:id="ventesimariga_013" ulx="41" uly="1261" lrx="1028" lry="1322" />
+            <zone xml:id="ventunesimariga_013" ulx="65" uly="1342" lrx="1030" lry="1394" />
+            <zone xml:id="ventiduesimariga_013" ulx="74" uly="1416" lrx="1071" lry="1506" />
+            <zone xml:id="ventitreesimariga_013" ulx="38" uly="1455" lrx="1077" lry="1565" />
+            <zone xml:id="ventiquattresima_013" ulx="49" uly="1524" lrx="1036" lry="1579" />
+            <zone xml:id="venticinquesimariga_013" ulx="29" uly="1572" lrx="1079" lry="1652" />
+            <zone xml:id="ventiseiesimariga_013" ulx="75" uly="1619" lrx="725" lry="1665" />
+        </surface>
+        <!--fronte-->
+        <surface xml:id="fronte013">
+            <graphic url='cartoline/7694-013F.jpg' width='1077px' height='1655px' />
+            <zone xml:id="primariga_013F" ulx="28" uly="1386" lrx="1064" lry="1493" />
+            <zone xml:id="secondariga_013F" ulx="28" uly="1493" lrx="1066" lry="1569" />
+            <zone xml:id="terzariga_013F" ulx="28" uly="1571" lrx="285" lry="1648" />
+            <zone xml:id="quartariga_013F" ulx="778" uly="1570" lrx="1002" lry="1644" />
+        </surface>
+    </facsimile>
+</teiCorpus>

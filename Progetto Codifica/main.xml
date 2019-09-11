@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!DOCTYPE teiCorpus SYSTEM "allDTD.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:id="main">
+        <fileDesc> <!-- contiene informazioni del file -->
+            <titleStmt> <!-- obbligatorio: edizione digitale e responsabili -->
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title> Progetto di Codifica di Testi </title>
+                
+                <!-- TRASCRITTORE nome e cognome-->
+                <respStmt>
+                    <resp>Trascritto da</resp>
+                    <name xml:id="SM">Sofia Montagna, </name>
+                    <name xml:id="GM">Giulia Manfredi, </name>
+                    <name xml:id="MS">Martina Simonetti</name>
+                </respStmt>
+                
+                <!-- ENTE DI APPARTENENZA -->
+                <respStmt xml:id="ente">
+                    <resp>Ente di Appartenenza</resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+                
+            </titleStmt>
+            
+            <editionStmt>
+                <edition> Studenti di Codifica di Testi, corso di laurea in Informatica Umanistica, Università di Pisa
+                    <!-- COMPILAZIONE -->
+                    <date>2018</date>
+                </edition>
+                
+                <!-- NOME COMPILATORE -->
+                <respStmt>
+                    <resp>Codificato da</resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+                
+                <!-- REFERENTE SCIENTIFICO sempre Nome Cognome, XY2 è sempre Tommaso Castagneto, XZ1 è chi interviene sulla schedatura già fatta per correzioni e aggiunte-->
+                <respStmt>
+                    <resp>Compilatore</resp>
+                    <name ref="#TC">Tommaso Castagneto, </name>
+                    <name xml:id="MMS">Manfredi Giulia, Montagna Sofia e Simonetti Martina</name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Responsabile scientifico</resp>
+                    <name xml:id="GP">Giacomo Paolicchi, </name>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Funzionario responsabile</resp>
+                    <name xml:id="ER">E. Ratti</name>
+                </respStmt>
+                
+            </editionStmt>
+            
+            <publicationStmt> <!-- Obbligatorio: modalità di pubblicazione digitale -->
+                <publisher>Unipi</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <availability>
+                    <p>Disponibile solo su licenza</p>
+                </availability>
+                <date when="2019">2019</date>
+                <distributor>LabCD</distributor>
+                <address>
+                    <addrLine>Laboratorio di Cultura Digitale - Università di Pisa</addrLine>
+                    <addrLine>Pisa</addrLine>
+                </address>
+            </publicationStmt>
+            
+            <sourceDesc> <!-- obbligatorio per fileDesc, fornisce informazioni sulla fonte materiale  -->
+                <bibl>
+                    <interp> Tre cartoline, di cui due scritte da Giovanni Coliola e la terza da Oliva Turtura. </interp>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country> Italia </country>
+                        <settlement> La Spezia (SP) </settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerra Mondiale</repository>
+                    </msIdentifier>
+                </msDesc>              
+            </sourceDesc>
+            
+        </fileDesc>    
+    </teiHeader>
+
+    
+  
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina013.xml"> 
+        <xi:fallback/> 
+    </xi:include>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina024.xml">
+        <xi:fallback/>
+    </xi:include>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="cartolina100.xml">
+        <xi:fallback/>
+    </xi:include>
+
+</teiCorpus>

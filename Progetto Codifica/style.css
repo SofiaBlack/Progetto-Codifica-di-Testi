@@ -1,0 +1,257 @@
+html {
+    background-color            : #ECE3D2;
+ }
+body  {
+    font-family                 : 'Source Serif Pro', serif;
+    text-align                  : justify;
+    margin                      : 0;
+}
+
+#introduzione{
+    height                     : auto;
+    margin                     : 4%;
+    line-height: 17px;
+    line-break: strict;
+}
+#titolo {
+    font-family                 : 'Great Vibes', cursive;
+    font-size                   : 70px;
+    text-align                  : center;
+    text-shadow: 6px 5px #d6b3b1;
+    color: #7A787C;
+    margin:4%
+}
+h2 {
+    font-family                 : 'Great Vibes', cursive;
+    font-size                   : 35px;
+    text-align                  : center;
+    color                       : #B07476
+}
+
+/* MENU' */
+nav {
+    width                       : 100%;
+    opacity                     : 0.6;
+}
+
+ul {
+    margin                      : 4%;
+    padding                     : 0;
+    list-style                  : none;
+    display                     : flex;
+    justify-content             : center;
+    z-index                     : 10;
+}
+ul li {
+    text-align                  : center;
+    flex-grow                   : 1;
+    transition-duration         : 1s;
+    background-color            : #d6b3b1;
+}
+ul li:hover {
+    
+    background-color            : #a97c79;
+}
+ul li a {
+    display                     : block;
+    padding                     : 20px;
+    text-decoration             : none;
+    font-size                   : 24px;
+    transition-property         : color;
+    color                       : black;
+    font-family                 : 'Source Serif Pro', serif;
+    font-weight                 : bold;
+    transition-duration         : 1s;
+}
+ul li a:hover {
+    color                       : #000000
+}
+
+/*div*/
+.cont {
+    border-top-style: solid;
+    border-top-width: 20px;
+    border-top-color: #d6b3b1;
+}
+.informazioni {
+    text-align: center;
+}
+.luogo{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    color: #a97c79;
+    font-size: 20px
+}
+.testo {
+    line-height: 10px;
+    float: right;
+    line-break: auto;
+    height: auto;
+    width: auto;
+    margin-top: 2.5%
+}
+.persone {
+    display: flex;
+    justify-content: center;
+    border-color: #843C44;
+    border-style: solid;
+    background-color:#D4C6BD
+}
+.persona {
+    margin-left: 5%;
+    margin-right: 5%
+}
+.corrispondenze {
+    display: flex;
+    justify-content: center;
+    border-color: #843C44;
+    border-style: solid;
+    background-color:#D4C6BD
+}
+
+.destinatario {
+    margin-left: 5%;
+    margin-right: 5%
+}
+.descr {
+    text-align: center;
+}
+.lingua{
+    text-align: center;
+}
+.mittente {
+    margin-left: 5%;
+    margin-right: 5%
+}
+.fronte {
+    text-align: center;
+}
+.archivio {
+    float: right;
+}
+/*cartolina13*/ 
+#cartolina13 {
+    height                     : auto;
+    margin                     : 4%;
+    line-height: 17px;
+    line-break: strict;
+    margin-bottom: 10%;
+    margin-top: 2.5%;
+}
+#cartolina13 .testofronte {
+    float: right;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    line-height: 10px;
+    line-break: strict
+}
+#cartolina13 .immagine {
+    display                     : flex;
+    justify-content             : center;
+    align-items                 : center;
+    margin-top: 7%;
+    margin-left: 4%
+}
+#cartolina13 .archivio {
+    margin:2.5%;
+    float: left
+}
+#cartolina13 .testo {
+    margin-top: 3%;
+    float: left;
+    margin-right: 1%
+}
+/*cartolina 24*/
+#cartolina24 {
+    height                     : auto;
+    margin                     : 4%;
+    line-height: 17px;
+    line-break: strict
+}
+#cartolina24 .imgfronte {
+    margin-left: 10%
+}
+#cartolina24 .imgretro {
+    margin-left: 5%
+}
+#cartolina24 .testo{
+    margin-top: 12.5%; 
+    float: left
+}
+#cartolina24 .archivio {
+    margin-top: 12.5%;
+    margin-right: 2%;
+    float: left;
+}
+
+/* cartolina 100 */
+#cartolina100 {
+    height                     : auto;
+    margin                     : 4%;
+    line-height: 17px;
+    line-break: strict
+}
+#cartolina100 .testo{
+    margin-top: 10%;
+    float: left;
+}
+#cartolina100 .archivio {
+    float: left;
+    margin-right: 2%;
+    margin-top: 10%
+}
+#cartolina100 .imgretro {
+    margin-left: 2%
+}
+/*img*/
+img {
+    width                       : 90%;
+    border-color: #843C44;
+    border-style: solid;
+    border-width: medium;
+    padding: 1%
+}
+.imgfronte{
+    float:left;
+    margin-left: 5%
+}
+
+.immagine {
+    display                     : flex;
+    justify-content             : center;
+    align-items                 : center;
+    margin-top: 7%;
+
+}
+#crediti {
+    height                     : auto;
+    line-height: 10px;
+    line-break: strict;
+    margin: 4%;
+    border-bottom-style: solid;
+    border-bottom-width: 20px;
+    border-bottom-color: #d6b3b1;
+}
+#crediti h1{
+    font-family                 : 'Great Vibes', cursive;
+    font-size                   : 35px;
+    text-align                  : center;
+    color                       : #B07476
+}
+#crediti div {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    justify-content: space-evenly;
+    margin                     : 0.5%;
+    padding: 0.5%
+}
+#crediti div p {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    margin-top: 0.5%;
+    margin-bottom: 1.5%
+}

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE teiCorpus SYSTEM "allDTD.dtd">
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<teiCorpus xml:id="cart24" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <!-- TITOLO NB: non corrisponde completamente alla voce TITOLO della tabella perché si tratta del titolo della edizione digitale -->
+                <title> Eterno dilemma - Edizione digitale diplomatico-interpretativa </title>
+            </titleStmt>
+            <!-- NOTE NB: mettere qui tutto ciò che non rientra nella codifica -->
+            <publicationStmt> <!-- elemento obbligaorio per fileDesc -->
+                <publisher>
+                    <orgName ref="#UNIPI"> Unipi </orgName> 
+                </publisher>  
+            </publicationStmt>
+            <notesStmt> 
+                <note n="1" > Nella cartolina non è presente né l'indirizzo del destinatario, né il francobollo. 
+                    Supponiamo che la cartolina non fosse mai stata spedita, o che fosse contenuta in una busta da lettere non pervenutaci o che fosse stata recapitata a mano. 
+                </note>
+                <note n="2">
+                    Sul retro troviamo la stampa centrale "Cartolina Postale", "Serie <num type="cardinal"><idno>1020-4 </idno></num>" 
+                    e il titolo dell'opera. In orizzontale sono invece ripostate le stampe "proprietà artistica riservata" e 
+                    "Visto <abbr>Rev.</abbr> Stampa - <placeName>Milano</placeName> - <num type="cardinal"><idno>2071</idno></num>".
+                </note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <bibl>
+                    <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                    
+                    <title type="custom" resp="#ES" xml:id="titolo24"> Auguri per un nuovo anno </title>
+                    <author ref="#GC"> Giovanni </author>
+                    <!-- LUOGO -->
+                    <pubPlace> Milano </pubPlace>
+                    <!-- CRONOLOGIA, attenzione si riferisce solo alla data di stampa -->
+                    <date when="1917"> 1917 </date>
+                </bibl>
+                
+                <msDesc>
+                    <msIdentifier>                        
+                        <idno>7694_024_001/002</idno>
+                    </msIdentifier>
+                    
+                    <!-- Informazioni sul contenuto della cartolina -->
+                    <!-- DESCRIZIONE -->
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <objectType>Cartolina</objectType>
+                                    <!-- MATERIALI -->
+                                    <material>Carta</material>
+                                    <!-- DIMENSIONE -->
+                                    <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+
+                               <condition> Buona, non sono necessari interventi di restauro</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc> 
+                </msDesc>
+                
+                <!-- NOMI -->
+                
+                <listPerson>
+                    <person>
+                        <persName ref="#GC">
+                            <forename>Giovanni</forename>
+                            <surname>Coliola </surname>
+                        </persName>
+                        <sex>M</sex>
+                        <occupation>[maggiore]</occupation>
+                    </person>
+                    
+                    <person>
+                        <persName ref="#OT">
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName>
+                        <sex>F</sex> 
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="MO">
+                        <placeName>Modena</placeName>
+                        <settlement type="località">Città</settlement>
+                        <district type="comune">Modena</district>
+                        <district type="provincia">MO</district>
+                        <country key="N">IT</country>
+                    </place>
+                </listPlace>
+                
+            </sourceDesc>
+        </fileDesc>
+        
+        <profileDesc>
+            
+            <correspDesc>
+                <correspAction type="sent">
+                    <persName ref="#GC">Giovanni Coliola</persName>
+                    <placeName ref="#MO">Modena</placeName>
+                    <!-- DATA data di invio da timbro (postage) o da manoscritto (writing) -->
+                    <date type="writing" when="19171231">31/12/1917</date>
+                </correspAction>
+                
+                <correspAction type="received">
+                    <persName ref="#OT">Oliva Turtura</persName>
+                </correspAction>
+            </correspDesc>
+            
+            <textClass>
+                <keywords>
+                    <!-- soggettario -->
+                    <!-- tipologia -->
+                    <!-- descrizione -->
+                    <term>Cartolina </term>
+                    <term type="descr1">Cartolina Artistica</term>
+                    <term type="descr2">Coppia di innamorati</term>
+                </keywords>
+            </textClass>
+            
+            <langUsage>
+                <language ident="it-IT">Italiano</language>
+            </langUsage>
+            
+        </profileDesc>
+        
+    </teiHeader>
+    
+    
+    <text type="cartolina"  xml:lang="it">
+        <body>
+            
+            <div type="fronte">
+                <figure xml:id="testo024">
+                    <pb facs="#fronte024" />
+                    <figDesc> L' immagine raffigura una coppia di innamorati sorridenti. L'uomo abbraccia la donna dal dietro, mentre la donna avvolta 
+                        in un abito bianco tiene in mano un mazzo di margherite giocando con i petali.   
+                    </figDesc>
+                    <head> Eterno dilemma </head>
+                    <note n="1"> Nell' illustrazione è presente la firma dell'autore illeggibile.</note>
+                </figure>
+            </div> 
+            
+            <div type="retro">
+                
+                
+                <div type="codice"> 
+                    <p>
+                        <num type="cardinal">
+                            <idno>24</idno>
+                        </num>
+                    </p>
+                </div>
+         
+                <div type="message" xml:id="c024">
+                <!-- data e luogo  -->
+                    <opener facs="#luogo_data_024">
+                        <dateline> 
+                            <placeName> Modena </placeName> 
+                            <distinct type="forma_desueta"> li </distinct> 
+                            <date when="19171231"> 31/12/1917</date>.
+                        </dateline>
+                        <lb facs="#primariga_024"/>  <salute> Mia cara <persName> <forename> Oliva </forename> </persName>, </salute> 
+                    </opener>
+                <!-- corpo della cartolina -->
+                    <p>  sono in vivo <distinct> orgasmo </distinct>
+                        <lb facs="#secondariga_024"/> per ottenere un buon permesso, chissà che
+                        <lb facs="#terzariga_024"/> non venga appagato questo mio grande <unclear reason="illegible"> desiderio </unclear>
+                        <lb facs="#quartariga_024"/> Sarebbe una gioia troppo bella. Ti penso
+                        <lb facs="#quintariga_024"/> sempre con tutta l' anima, penso alla mia
+                        <lb facs="#sestariga_024"/> Oliva, al mio amore lontano e tante tante 
+                        <lb facs="#settimariga_024"/> belle cose e mi struggo all' ansia febbrile
+                        <lb facs="#ottavariga_024"/> di venire <choice> <abbr> x </abbr> <expan> per </expan> </choice> posare un caro e felicissimo
+                        <lb facs="#nonariga_024"/> bacio sulla tua fronte.
+                    </p>
+                <!-- saluto finale -->
+                    <closer > 
+                        <lb facs="#024_saluti"/> <salute> Auguri infiniti per il nuovo anno a tutti </salute> tuo <signed> Giovanni </signed> 
+                    </closer>
+                </div>
+            </div>
+        </body>
+    </text>
+    
+    <facsimile>
+        <!-- RETRO -->
+        <surface xml:id ="retro024">
+            <graphic url="cartoline/7694-024R.jpg"/>
+            <zone xml:id="luogo_data_024" ulx="254" uly="10" lrx="1261" lry="139"/>
+            <zone xml:id="primariga_024" ulx="69" uly="128" lrx="1531" lry="233"/>
+            <zone xml:id="secondariga_024" ulx="54" uly="215" lrx="1539" lry="328"/>
+            <zone xml:id="terzariga_024" ulx="38" uly="327" lrx="1610" lry="436"/>
+            <zone xml:id="quartariga_024" ulx="24" uly="394" lrx="1561" lry="530"/>
+            <zone xml:id="quintariga_024" ulx="30" uly="502" lrx="1526" lry="597"/>
+            <zone xml:id="sestariga_024" ulx="35" uly="612" lrx="1595" lry="679"/>
+            <zone xml:id="settimariga_024" ulx="55" uly="695" lrx="1608" lry="830"/>
+            <zone xml:id="ottavariga_024" ulx="47" uly="801" lrx="1605" lry="915"/>
+            <zone xml:id="nonariga_024" ulx="61" uly="903" lrx="1594" lry="976"/>
+            <zone xml:id="saluti_024" ulx="95" uly="977" lrx="1603" lry="1013"/>
+        </surface>
+        <!-- FRONTE -->
+        <surface xml:id="fronte024">
+            <graphic url ="cartoline/7694-024F.jpg"/>
+        </surface>
+    </facsimile>
+</teiCorpus>
